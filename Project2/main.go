@@ -21,9 +21,9 @@ func createArray(path string) ([]string, error) {
 
 	var lines []string
 	scanner := bufio.NewScanner(file)
-	x := 0
+	
 	for scanner.Scan() {
-		x++
+		
 		lines = append(lines, scanner.Text())
 	}
 	return lines, scanner.Err()
